@@ -16,7 +16,13 @@ election_url = config['url']
 races = config['races']
 
 for race in races
-    race['results'] = [['PRECINCT'] + race['candidates']]
+    candidates = race['candidates'].keys
+    output_candidates = []
+    for candidate in candidates
+        output_candidates << race['candidates'][candidate]['output_spelling']
+        race['candidates'][candidate]['total_votes'] = 0
+    end
+    race['results'] = [['PRECINCT'] + output_candidates + ['TOTAL']]
 end
 
 for vtd in PRECINCTS
@@ -33,21 +39,37 @@ for vtd in PRECINCTS
         votes_table = title_div.parent.next_element
 
         vtd_results = [vtd]
+        precinct_votes = 0
 
-        for candidate in race['candidates']
+        for candidate in race['candidates'].keys
             selector = '.office_candidate_label:contains("%s")' % candidate
             votes = votes_table.at(selector)
                 .next_element.text
                 .gsub(',','')
 
             vtd_results.push(votes)
+            precinct_votes += votes.to_i
+
+            race['candidates'][candidate]['total_votes'] += votes.to_i
         end
 
+        vtd_results.push(precinct_votes)
         race['results'].push(vtd_results)
     end
 end
 
 for race in races
+    all_votes = ["ALL-PRECINCTS"]
+    all_precinct_votes = 0
+
+    for candidate in race['candidates'].keys
+        all_votes << race['candidates'][candidate]['total_votes']
+        all_precinct_votes += race['candidates'][candidate]['total_votes']
+    end
+
+    all_votes << all_precinct_votes
+    race['results'].push(all_votes)
+
     safe_title = race['title'].downcase.gsub(' ', '-')
     output_path = OUTPUT_PATTERN % safe_title
 

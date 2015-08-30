@@ -1,17 +1,99 @@
 {
-  "url": "https://www.dcboee.org/election_info/election_results/2014/November-4-General-Election",
+  "url": "https://www.dcboee.org/election_info/election_results/2015/April-28-Special-Election",
   "races": [
     {
-      "title": "MAYOR OF THE DISTRICT OF COLUMBIA",
-      "candidates": [
-        "MURIEL E. BOWSER",
-        "DAVID A. CATANIA",
-        "NESTOR DJONKAM",
-        "FAITH",
-        "BRUCE MAJORS",
-        "CAROL SCHWARTZ",
-        "WRITE-IN"
-      ]
+      "title": "MEMBER OF THE COUNCIL WARD FOUR",
+      "candidates": {
+        "Acqunetta Anderson": {
+          "output_spelling" : "Acqunetta Anderson"
+        },
+        "Leon T. Andrews": {
+          "output_spelling" : "Leon Andrews"
+        },
+        "Ron Austin": {
+          "output_spelling" : "Ron Austin"
+        },
+        "Renee L. Bowser": {
+          "output_spelling" : "Renee Bowser"
+        },
+        "Gwenellen Corley-Bowman": {
+          "output_spelling" : "G. Corley-Bowman"
+        },
+        "Judi Jones": {
+          "output_spelling" : "Judi Jones"
+        },
+        "Edwin W. Powell": {
+          "output_spelling" : "Edwin Powell"
+        },
+        "Pedro Rubio": {
+          "output_spelling" : "Pedro Rubio"
+        },
+        "Glova Scott": {
+          "output_spelling" : "Glova Scott"
+        },
+        "Douglass Sloan": {
+          "output_spelling" : "Douglass Sloan"
+        },
+        "Bobvala Tengen": {
+          "output_spelling" : "Bobvala Tengen"
+        },
+        "Brandon Todd": {
+          "output_spelling" : "Brandon Todd"
+        },
+        "Dwayne M. Toliver": {
+          "output_spelling" : "Dwayne Toliver"
+        },
+        "WRITE-IN": {
+          "output_spelling" : "WRITE-IN"
+        }
+      }
+    },
+    {
+      "title": "MEMBER OF THE COUNCIL WARD EIGHT",
+      "candidates": {
+        "Jauhar Abraham": {
+          "output_spelling" : "Jauhar Abraham"
+        },
+        "Stuart Anderson": {
+          "output_spelling" : "Stuart Anderson"
+        },
+        "Marion C. Barry": {
+          "output_spelling" : "Marion C. Barry"
+        },
+        "Sheila Bunn": {
+          "output_spelling" : "Sheila Bunn"
+        },
+        "Greta Fuller": {
+          "output_spelling" : "Greta Fuller"
+        },
+        "Eugene D. Kinlow": {
+          "output_spelling" : "Eugene Kinlow"
+        },
+        "LaRuby May": {
+          "output_spelling" : "LaRuby May"
+        },
+        "Anthony Muhammad": {
+          "output_spelling" : "A. Muhammad"
+        },
+        "Sandra Seegars": {
+          "output_spelling" : "Sandra Seegars"
+        },
+        "Keita Vanterpool": {
+          "output_spelling" : "Keita Vanterpool"
+        },
+        "Leonard Watson": {
+          "output_spelling" : "Leonard Watson"
+        },
+        "Trayon": {
+          "output_spelling" : "Trayon White"
+        },
+        "Natalie Williams": {
+          "output_spelling" : "Natalie Williams"
+        },
+        "WRITE-IN": {
+          "output_spelling" : "WRITE-IN"
+        }
+      }
     }
   ]
 }
